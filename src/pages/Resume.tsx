@@ -18,29 +18,30 @@ const Resume = () => (
         transition={{ delay: 0.3 }}
         className="max-w-2xl"
       >
-        <div className="bg-card border border-border rounded-lg p-8 glow-border">
+        <div className="glass-card rounded-lg p-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="p-3 rounded-lg bg-primary/10">
               <FileText size={32} className="text-primary" />
             </div>
             <div>
-              <h2 className="font-display text-lg font-semibold text-foreground">Alex Chen - Resume</h2>
-              <p className="text-sm text-muted-foreground">B.Tech Data Science & AI • Updated Feb 2026</p>
+              <h2 className="font-display text-lg font-semibold text-foreground">Shikhar Maurya - Resume</h2>
+              <p className="text-sm text-muted-foreground">B.Tech Data Science • Software Developer</p>
             </div>
           </div>
 
           <div className="space-y-4 mb-8">
-            <ResumeSection title="Experience">
-              <ResumeItem title="Data Science Intern" subtitle="TechCorp AI Labs" date="Jun 2025 - Aug 2025" />
-              <ResumeItem title="ML Research Assistant" subtitle="University AI Lab" date="Jan 2025 - May 2025" />
-            </ResumeSection>
             <ResumeSection title="Education">
-              <ResumeItem title="B.Tech Data Science & AI" subtitle="University of Technology" date="2023 - 2027" />
+              <ResumeItem title="B.Tech in Data Science" subtitle="Currently Pursuing" date="Present" />
             </ResumeSection>
             <ResumeSection title="Key Skills">
               <p className="text-sm text-muted-foreground">
-                Python, R, SQL, TensorFlow, PyTorch, Scikit-learn, Docker, AWS, Git, Tableau
+                C++, Python, DSA, Machine Learning, React, Node.js, SQL, Git, Linux, Web Development
               </p>
+            </ResumeSection>
+            <ResumeSection title="Projects">
+              <ResumeItem title="SpendIQ" subtitle="AI-powered expense tracker" date="React, Node.js, MongoDB" />
+              <ResumeItem title="DSA Practice Tracker" subtitle="Coding progress tracker" date="React, Node.js" />
+              <ResumeItem title="Portfolio Website" subtitle="Personal portfolio" date="React, TypeScript" />
             </ResumeSection>
           </div>
 
