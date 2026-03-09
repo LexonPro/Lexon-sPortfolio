@@ -3,14 +3,9 @@ import CertificateCard from "@/components/CertificateCard";
 import { motion } from "framer-motion";
 
 const certificates = [
-  { title: "Machine Learning Specialization", issuer: "Stanford Online (Coursera)", date: "Jan 2025" },
-  { title: "Deep Learning Specialization", issuer: "deeplearning.ai", date: "Mar 2025" },
-  { title: "AWS Cloud Practitioner", issuer: "Amazon Web Services", date: "Jun 2025" },
-  { title: "TensorFlow Developer Certificate", issuer: "Google", date: "Aug 2025" },
-  { title: "Data Science Professional Certificate", issuer: "IBM (Coursera)", date: "Nov 2024" },
-  { title: "SQL for Data Science", issuer: "UC Davis (Coursera)", date: "Sep 2024" },
-  { title: "Tableau Desktop Specialist", issuer: "Tableau", date: "Dec 2025" },
-  { title: "Python for Data Science & AI", issuer: "IBM", date: "Jul 2024" },
+  { title: "Python Programming Certificate", issuer: "Online Platform", date: "2024", link: "#" },
+  { title: "Data Science Certificate", issuer: "Online Platform", date: "2024", link: "#" },
+  { title: "Web Development Certificate", issuer: "Online Platform", date: "2024", link: "#" },
 ];
 
 const Certificates = () => (
@@ -26,7 +21,7 @@ const Certificates = () => (
         </p>
       </motion.div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {certificates.map((cert, i) => (
           <motion.div
             key={cert.title}

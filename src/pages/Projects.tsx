@@ -4,43 +4,22 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Sentiment Analysis Engine",
-    description: "Real-time sentiment analysis of Twitter data using BERT and transformers. Processes 10K+ tweets per minute with 94% accuracy.",
-    tags: ["Python", "BERT", "FastAPI", "Redis"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "SpendIQ",
+    description: "AI-powered expense tracking application with analytics dashboard and category-based spending insights.",
+    tags: ["React", "Node.js", "MongoDB"],
+    github: "https://github.com/LexonPro",
   },
   {
-    title: "Stock Price Predictor",
-    description: "LSTM-based time series forecasting model for stock prices with interactive dashboard built in Streamlit.",
-    tags: ["Python", "TensorFlow", "Streamlit", "Yahoo Finance API"],
-    github: "https://github.com",
+    title: "Portfolio Website",
+    description: "Personal developer portfolio website showcasing projects, certificates, and coding profiles with modern UI effects.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/LexonPro",
   },
   {
-    title: "Image Classification Pipeline",
-    description: "End-to-end computer vision pipeline for medical image classification using transfer learning with ResNet50.",
-    tags: ["PyTorch", "OpenCV", "Docker", "AWS"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "Recommendation System",
-    description: "Collaborative filtering recommendation engine for movies using matrix factorization and deep learning approaches.",
-    tags: ["Python", "Scikit-learn", "Flask", "PostgreSQL"],
-    github: "https://github.com",
-  },
-  {
-    title: "COVID-19 Data Dashboard",
-    description: "Interactive visualization dashboard tracking COVID-19 trends globally with real-time data updates and predictive modeling.",
-    tags: ["Python", "Plotly", "Pandas", "Dash"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "Chatbot with RAG",
-    description: "Retrieval-Augmented Generation chatbot for Q&A over custom documents using LangChain and vector databases.",
-    tags: ["LangChain", "Pinecone", "OpenAI", "React"],
-    github: "https://github.com",
+    title: "DSA Practice Tracker",
+    description: "System for tracking solved coding problems and monitoring coding progress across multiple platforms.",
+    tags: ["React", "Node.js", "SQL"],
+    github: "https://github.com/LexonPro",
   },
 ];
 
@@ -53,7 +32,7 @@ const Projects = () => (
         </h1>
         <div className="h-1 w-16 bg-primary rounded mb-4" />
         <p className="text-muted-foreground mb-10 max-w-xl">
-          A collection of data science and ML projects I've built. Each one taught me something new.
+          A collection of projects I've built. Each one taught me something new.
         </p>
       </motion.div>
 
