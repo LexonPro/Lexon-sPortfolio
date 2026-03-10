@@ -1,4 +1,5 @@
 import PageWrapper from "@/components/PageWrapper";
+import CodingStats from "@/components/CodingStats";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Brain, Database, BarChart3, Code2, Cpu, Globe, Terminal, GitBranch } from "lucide-react";
