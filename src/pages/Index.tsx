@@ -117,6 +117,8 @@ const Index = () => {
           </code>
         </motion.div>
       </section>
+
+      <CodingStats />
     </PageWrapper>
   );
 };
