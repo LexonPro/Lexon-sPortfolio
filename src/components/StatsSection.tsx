@@ -5,8 +5,8 @@ import { Target, Rocket, Layers, GitBranch } from "lucide-react";
 
 const stats = [
   { icon: Target, value: 500, suffix: "+", label: "Problems Solved" },
-  { icon: Rocket, value: 10, suffix: "+", label: "Projects Built" },
-  { icon: Layers, value: 15, suffix: "+", label: "Technologies Learned" },
+  { icon: Rocket, value: 17, suffix: "", label: "GitHub Repos" },
+  { icon: Layers, value: 10, suffix: "+", label: "Technologies Used" },
   { icon: GitBranch, value: 200, suffix: "+", label: "GitHub Contributions" },
 ];
 

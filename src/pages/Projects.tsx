@@ -5,21 +5,76 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "SpendIQ",
-    description: "AI-powered expense tracking application with analytics dashboard and category-based spending insights.",
-    tags: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/LexonPro",
+    description: "Smart expense tracking application that helps users manage their finances with intuitive categorization and spending analytics.",
+    tags: ["JavaScript", "Finance", "Web App"],
+    github: "https://github.com/LexonPro/SpendIQ",
   },
   {
-    title: "Portfolio Website",
-    description: "Personal developer portfolio website showcasing projects, certificates, and coding profiles with modern UI effects.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/LexonPro",
+    title: "Smart Crop Advisory System",
+    description: "AI-powered system that recommends optimal crops based on soil conditions, weather data, and regional patterns.",
+    tags: ["CSS", "AI", "Agriculture", "Web"],
+    github: "https://github.com/LexonPro/smart-crop-advisory-system",
   },
   {
-    title: "DSA Practice Tracker",
-    description: "System for tracking solved coding problems and monitoring coding progress across multiple platforms.",
-    tags: ["React", "Node.js", "SQL"],
-    github: "https://github.com/LexonPro",
+    title: "Resume Analyzer AI",
+    description: "Intelligent resume parsing and analysis tool that provides feedback and scoring using NLP techniques.",
+    tags: ["Python", "NLP", "AI", "Machine Learning"],
+    github: "https://github.com/LexonPro/resume-analyzer-ai",
+  },
+  {
+    title: "Movie Recommendation System",
+    description: "Content-based and collaborative filtering recommendation engine for personalized movie suggestions.",
+    tags: ["Jupyter Notebook", "Python", "ML", "Data Science"],
+    github: "https://github.com/LexonPro/Movie-recommendation-system",
+  },
+  {
+    title: "Expense Prediction ML",
+    description: "Machine learning model that predicts future expenses based on historical spending patterns and user behavior.",
+    tags: ["Jupyter Notebook", "Python", "ML", "Finance"],
+    github: "https://github.com/LexonPro/Expense-Prediction-ML",
+  },
+  {
+    title: "Student Performance EDA",
+    description: "Exploratory data analysis on student performance data to uncover patterns and insights in academic outcomes.",
+    tags: ["Jupyter Notebook", "Python", "EDA", "Data Science"],
+    github: "https://github.com/LexonPro/Student-Performance-EDA",
+  },
+  {
+    title: "Daily LeetCode",
+    description: "Daily competitive programming solutions with clean implementations and detailed approach explanations.",
+    tags: ["C++", "DSA", "Competitive Programming"],
+    github: "https://github.com/LexonPro/Daily_LeetCode",
+  },
+  {
+    title: "DSA Practice",
+    description: "Comprehensive collection of Data Structures and Algorithms practice problems with optimized solutions.",
+    tags: ["C++", "DSA", "Algorithms"],
+    github: "https://github.com/LexonPro/DSA_Practice",
+  },
+  {
+    title: "DSA C++ Revision",
+    description: "Structured revision notes and code for Data Structures and Algorithms concepts in C++.",
+    tags: ["HTML", "C++", "DSA", "Notes"],
+    github: "https://github.com/LexonPro/dsa-cpp-revision",
+  },
+  {
+    title: "FullStack Development",
+    description: "Full-stack web development projects and practice covering frontend and backend technologies.",
+    tags: ["CSS", "JavaScript", "Full Stack"],
+    github: "https://github.com/LexonPro/FullStack",
+  },
+  {
+    title: "Python Practice",
+    description: "Collection of Python programs covering core concepts, OOP, file handling, and data manipulation.",
+    tags: ["Python", "Programming", "Practice"],
+    github: "https://github.com/LexonPro/Python",
+  },
+  {
+    title: "Lexon's Portfolio",
+    description: "Modern developer portfolio website built with React, TypeScript, and Framer Motion animations.",
+    tags: ["TypeScript", "React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/LexonPro/Lexon-sPortfolio",
+    demo: "https://lexonpro.lovable.app",
   },
 ];
 
@@ -32,7 +87,7 @@ const Projects = () => (
         </h1>
         <div className="h-1 w-16 bg-primary rounded mb-4" />
         <p className="text-muted-foreground mb-10 max-w-xl">
-          A collection of projects I've built. Each one taught me something new.
+          Real projects from my GitHub — spanning AI/ML, web development, and competitive programming.
         </p>
       </motion.div>
 
@@ -42,7 +97,7 @@ const Projects = () => (
             key={project.title}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + i * 0.1 }}
+            transition={{ delay: 0.3 + i * 0.08 }}
           >
             <ProjectCard {...project} />
           </motion.div>

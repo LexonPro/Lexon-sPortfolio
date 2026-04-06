@@ -5,25 +5,46 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "SpendIQ",
-    description: "AI-powered expense tracking with analytics dashboard and smart category insights.",
-    tags: ["React", "Node.js", "MongoDB", "AI"],
-    github: "https://github.com/LexonPro",
+    title: "Smart Crop Advisory System",
+    description: "AI-powered system recommending optimal crops based on soil, weather, and regional data.",
+    tags: ["CSS", "AI", "Agriculture", "Web"],
+    github: "https://github.com/LexonPro/smart-crop-advisory-system",
     gradient: "from-primary/20 to-accent/10",
   },
   {
-    title: "Portfolio Website",
-    description: "Personal developer portfolio with modern UI effects, animations, and data-driven design.",
-    tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-    github: "https://github.com/LexonPro",
+    title: "Resume Analyzer AI",
+    description: "Intelligent resume parsing and scoring tool using NLP techniques for actionable feedback.",
+    tags: ["Python", "NLP", "AI", "ML"],
+    github: "https://github.com/LexonPro/resume-analyzer-ai",
     gradient: "from-accent/20 to-primary/10",
   },
   {
-    title: "DSA Practice Tracker",
-    description: "Track solved coding problems and monitor progress across multiple competitive platforms.",
-    tags: ["Python", "SQL", "React"],
-    github: "https://github.com/LexonPro",
+    title: "Movie Recommendation System",
+    description: "Content-based & collaborative filtering engine for personalized movie suggestions.",
+    tags: ["Python", "ML", "Jupyter", "Data Science"],
+    github: "https://github.com/LexonPro/Movie-recommendation-system",
     gradient: "from-primary/15 to-accent/15",
+  },
+  {
+    title: "SpendIQ",
+    description: "Smart expense tracker with analytics dashboard and category-based spending insights.",
+    tags: ["JavaScript", "Finance", "Web App"],
+    github: "https://github.com/LexonPro/SpendIQ",
+    gradient: "from-accent/15 to-primary/20",
+  },
+  {
+    title: "Expense Prediction ML",
+    description: "ML model predicting future expenses from historical spending patterns.",
+    tags: ["Python", "ML", "Jupyter", "Finance"],
+    github: "https://github.com/LexonPro/Expense-Prediction-ML",
+    gradient: "from-primary/20 to-accent/15",
+  },
+  {
+    title: "Student Performance EDA",
+    description: "Exploratory analysis uncovering patterns in student academic performance data.",
+    tags: ["Python", "EDA", "Jupyter", "Data Science"],
+    github: "https://github.com/LexonPro/Student-Performance-EDA",
+    gradient: "from-accent/10 to-primary/20",
   },
 ];
 
@@ -43,7 +64,7 @@ const FeaturedProjects = () => {
           Featured <span className="text-gradient">Projects</span>
         </h2>
         <p className="text-muted-foreground text-sm max-w-md mx-auto">
-          Some of my recent work that I'm proud of.
+          Highlights from my GitHub — AI/ML, data science, and full-stack work.
         </p>
       </motion.div>
 
@@ -53,12 +74,11 @@ const FeaturedProjects = () => {
             key={project.title}
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: i * 0.15, duration: 0.5 }}
+            transition={{ delay: i * 0.12, duration: 0.5 }}
             whileHover={{ y: -8, rotateY: 3, rotateX: -2 }}
             style={{ perspective: 800, transformStyle: "preserve-3d" }}
             className="glass-card rounded-xl overflow-hidden group"
           >
-            {/* Project preview area */}
             <div className={`h-40 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
               <div className="absolute inset-0 opacity-10" style={{
                 backgroundImage: `radial-gradient(circle at 20% 50%, hsl(var(--primary)) 1px, transparent 1px)`,
@@ -93,16 +113,14 @@ const FeaturedProjects = () => {
                 ))}
               </div>
               <div className="flex gap-3">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Github size={13} /> Source Code
-                  </a>
-                )}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Github size={13} /> Source Code
+                </a>
               </div>
             </div>
           </motion.div>
