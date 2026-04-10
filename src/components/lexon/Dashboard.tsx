@@ -108,9 +108,41 @@ const Dashboard = ({ result, onReset }: DashboardProps) => {
               {tab === "insights" && <InsightsPanel analysis={analysis} />}
               {tab === "suggestions" && <SuggestionsPanel analysis={analysis} />}
               {tab === "recruiter" && (
-                <div className="space-y-4">
-                  <InsightsPanel analysis={analysis} />
-                  <SuggestionsPanel analysis={analysis} />
+                <div className="space-y-6">
+                  {/* ATS Resume Bullets */}
+                  <div className="glass-card p-6 space-y-4">
+                    <h3 className="text-sm font-semibold text-foreground flex items-center gap-2">
+                      <span className="text-primary">📝</span> ATS-Friendly Resume Bullets
+                    </h3>
+                    <ul className="space-y-3">
+                      {analysis.resumeBullets.map((bullet, i) => (
+                        <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
+                          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Recruiter Perspective */}
+                  <div className="glass-card p-6 space-y-4">
+                    <h3 className="text-sm font-semibold text-foreground flex items-center gap-2">
+                      <span className="text-primary">👔</span> Recruiter Perspective
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed italic">
+                      "{analysis.recruiterInsights}"
+                    </p>
+                  </div>
+
+                  {/* Career Advice */}
+                  <div className="glass-card p-6 space-y-4">
+                    <h3 className="text-sm font-semibold text-foreground flex items-center gap-2">
+                      <span className="text-primary">🎯</span> Career Advice
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {analysis.overallAdvice}
+                    </p>
+                  </div>
                 </div>
               )}
             </motion.div>
